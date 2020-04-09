@@ -4,7 +4,7 @@ if (CONFIG_ESP_HTTPS_SERVER_ENABLE)
 endif()
 
 idf_component_register(SRCS ${src}
-                    INCLUDE_DIRS ${inc}
+                    INCLUDE_DIRS "include"
                     REQUIRES esp_http_server esp-tls
                     PRIV_REQUIRES lwip)
 
